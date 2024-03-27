@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const axiosInterceptorInstance = axios.create({
-  baseURL: "http://localhost:8000/", // Replace with your API base URL
+  baseURL: "https://thoughts-server-nu.vercel.app/", // Replace with your API base URL
 });
 
 // Request interceptor

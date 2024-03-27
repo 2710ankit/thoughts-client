@@ -23,7 +23,7 @@ const Page = () => {
       axiosInterceptorInstance.post("auth/sign-in/", data).then(
         (res) => {
           setThoughtSaved(true);
-          localStorage.setItem("token",res.data.token)
+          localStorage.setItem("token", res.data.token);
           //   router.push("/");
         },
         (err) => {}
@@ -116,7 +116,7 @@ const Page = () => {
       <Snackbar
         open={thoughtSaved}
         autoHideDuration={1}
-        message="Thought Send"
+        message="Login Success"
       />
     </Container>
   );
